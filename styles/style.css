@@ -1,0 +1,47 @@
+.para1, .para2, .para3, .para5, .para8, .para9, .para10, .actionText, .actionImg, .score{
+    
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+
+.para1, .para2, .para3, .score{
+color: rgba(0, 0, 0, 0.61); 
+font-size: large;   
+}
+
+.para8, .para9, .para10,{
+font-size: larger;
+}
+
+h1, h3{
+    color: rgba(0, 0, 0, 0.61);  
+    margin-top: 0%;
+    margin-bottom: 0%;
+   
+}
+
+h2{
+    color: rgb(27, 0, 0); 
+    margin-top: 0%;
+    margin-bottom: 0%; 
+   
+}
+
+.winAnounce, .main,.actionImg, .actionText{
+    width: 340px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+th, td {
+    width: 100px;
+    
+}
+
+table{
+    position: static;
+}
+    

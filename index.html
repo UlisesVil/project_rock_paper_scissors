@@ -1,84 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    
-<!--<button onclick="gameRound(0);">Rock</button>-->
-<!--<button onclick="gameRound(1);">Paper</button>-->
-<!--<button onclick="gameRound(2);">Scissors</button>-->
+<html lang="en" width="320px">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>RockPaperScissors</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        
+        <div id="start">
+            <div id="startbox" >
+                
+                <h2>Instructions</h2>
+
+                <ul id="instructions">
+                    <li>First you have to write your name</li>
+                    <li>Select your character</li>
+                    <li>You will fight against a virtual player</li>
+                    <li>You'll win if you beat virtual player 5 times</li>
+                    <li>You'll lose if virtual player beats you 5 times</li>
+                </ul>
+
+                <button id="botonstart">Start!!!</button>
+            
+                
+            </div>    
+        </div>
 
 
-<table>
-    <tr>
-        <td class="main"><img src="img/select.png" width="340px"></td>
-    </tr>
-   
-</table>
+        <div id="generalLogin" style="display: none;">
+            <div id="login" >
+                <p class="vol">Vol. Up <img id="up1" src="img/subir.png" width="20px"></p>
+                
+                <p class="vol">Vol. Down<img id="down" src="img/bajar.png" width="20px"></p>
+                <h1 id="name">Write your name!!!</h1>
+                
+                    <input id="textname" type="text" width="20px"/>
+                    <button id="botonlogin">Let's Play</button>
+            </div> 
+        </div>   
 
 
+        <div  id="general" style="display: none;">   
+            
+            <table >
+                <tr>
+                    <td>Vol. Up <img id="up2" src="img/subir.png" width="20px"></td>
+                    <td class="score">SCORE</td>
+                    <td>Vol. Down<img id="down2" src="img/bajar.png" width="20px"></td>
+                </tr>
+                <tr>
+                    <td ><p class=para1></p></td>
+                    <td ><p class=para3></p></td>
+                    <td ><p class=para2></p></td>
+                </tr>
+                <tr>
+                    <td><p class=para8></p></td>
+                    <td><p class=para10></p></td>
+                    <td><p class=para9></p></td>
+                </tr>
+                <tr>
+                    <td><img class="imgGen2" width="100 px" ></td>
+                    <td class="vs">VS</td>
+                    <td><img class="imgGen3" width="100 px" ></td>
+                </tr>
+            </table>
 
-<table >
-    <tr>
-        <td><img onclick="gameRound(0);" src="img/rock.gif" width="100px"></td>
-        <td><img onclick="gameRound(1);" src="img/paper.gif" width="100px"></td>
-        <td><img onclick="gameRound(2);" src="img/scissors.gif" width="80px"></td>
-    </tr>
-    
+            <table  width="318px">
+                <tr>
+                    <td class="actionText"><h3><p class=para4></p></h3></td>
+                </tr>
+                <tr>
+                    <td class="actionImg" ><img class="imgGen" width="200 px" ></td>
+                </tr>
+                
+            </table>
 
-</table>
+            <table  width="318px">
+                <tr>
+                    <td class="winAnounce"><h2><p class=para5></h2></p></td>
+                </tr>
+            </table>
 
+            <table  width="318px">
+                <tr >
+                    <td id="characterrock"  ><img class="imgstyle" onclick="gameRound(0);" src="img/rock.gif" width="100%"></td>
+                    <td id="characterpaper"  ><img class="imgstyle" onclick="gameRound(1);" src="img/paper.gif" width="100%"></td>
+                    <td id="characterscissors"  ><img class="imgstyle" onclick="gameRound(2);" src="img/scissors.gif" width="100%"></td>
+                </tr>
+            </table>
 
-<table>
-<tr>
-    <td class="winAnounce"><h2><p class=para5></h2></p></td>
-</tr>
-</table>
-
-
-<table >
-    <tr>
-        <td></td>
-        <td class="score">SCORE</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td ><p class=para1></p></td>
-        <td ><p class=para3></p></td>
-        <td ><p class=para2></p></td>
-    </tr>
-    <tr>
-        <td><h2><p class=para8></h2></p></td>
-        <td><p class=para10></p></td>
-        <td><h2><p class=para9></h2></p></td>
-    </tr>
-
-</table>
+            <table>
+                <tr>
+                    <!--<td class="main"><img src="img/select.png" width="300px"></td>-->
+                    
+                </tr>
+            </table>
+        </div> 
 
 
-<table>
-    <tr>
-        <td class="actionImg" ><img class="imgGen" width="200 px" ></td>
-    </tr>
-    <tr>
-        <td class="actionText"><h3><p class=para4></p></h3></td>
-    </tr>
-</table>
+        <div id="win" style="display: none;" >
+            <div id="winbox" >
+                <img id="imgyouwin" src="img/youwin2.png" width="320px" height="300px"/>
+                <button id="boton1">Play Again</button>
+                <button id="boton2">Quit</button>
+            <!-- <img src="img/fireworks.gif" width="320px" height="300px"/>-->
+            </div>
+        </div>
 
 
+        <div id="lose"  style="display: none;">
+            <div id="losebox" >
+                <img id="imgyoulose" src="img/youlose.gif" width="320px" height="300px"/>
+                <button id="boton3">Play Again</button>
+                <button id="boton4">Quit</button>
+            </div>
+        </div>
 
-<h2><p class=para6></p></h2>
-<h2><p class=para7></p></h2>
 
+        <div id="bye" style="display: none;">
+        
+            <div id="byebox">
+                <img id="imgbye" src="img/bye2.gif"/>
+                <buton id="boton5">Play Again!!!</buton>
+            </div>
+        </div>
 
+        <script type="text/javascript" src="JS/script.js"></script>
 
+        <div>
+            
+            <audio id="playername" src="audio/01_Password.mp3" loop></audio>
+            <audio id="gamestart" src="audio/03_Stage_Theme.mp3" loop></audio>
+            <audio id="winsound" src="audio/04_Stage_Clear.mp3"  loop></audio>
+            <audio id="losesound" src="audio/10_Game_Over.mp3" loop></audio>
+            <audio id="byesound" src="audio/07_World_Clear.mp3" loop></audio>
+        
 
-<script type="text/javascript" src="JS/script.js"></script>
+        </div>
 
-</body>
+    </body>
 </html>

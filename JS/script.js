@@ -23,7 +23,7 @@ const imgGen = document.querySelector('.imgGen');
 const imgGen2 = document.querySelector('.imgGen2');
 const imgGen3 = document.querySelector('.imgGen3');
 let playerSelection;
-
+textname
 
 //One round Function and Winner decision per round
 function gameRound (humano){
@@ -320,4 +320,18 @@ down2.addEventListener("click", function(){
     document.getElementById('winsound').volume-=0.1;
     document.getElementById('losesound').volume-=0.1;
     document.getElementById('byesound').volume-=0.1;
+});
+
+
+
+
+
+let botoncomienzo= document.querySelector("#comienzo");
+let divportada= document.querySelector("#portada");
+
+    
+botoncomienzo.addEventListener("click", function(){
+    divstart.style.display="";
+    divportada.style.display="none";
+    
 });

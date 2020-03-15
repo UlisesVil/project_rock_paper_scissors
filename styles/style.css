@@ -193,3 +193,24 @@ h2{
 .vol{
     text-align: left;
 }   
+
+
+#portada{
+    background: url(../img/portada.png);
+    width: 320px;
+   height: 570px;
+   text-align: center;
+   background-size: contain;
+}
+
+#comienzo{
+    margin-top: 500px;
+    border:0px;
+    padding: 10px;
+    margin-left: 0px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

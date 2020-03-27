@@ -10,7 +10,7 @@
     <body>
         
         <div id="portada">
-            <button id="comienzo">Welcome</button>
+            <button id="comienzo">Welcome !!!</button>
         </div>
 
         <div id="start" style="display: none;">
@@ -19,7 +19,7 @@
                 <h2>Instructions</h2>
 
                 <ul id="instructions">
-                    <li>First you have to write your name</li>
+                    <li class="lis">First you have to write your name</li>
                     <li>Select your character</li>
                     <li>You will fight against a virtual player</li>
                     <li>You'll win if you beat virtual player 5 times</li>
@@ -40,7 +40,7 @@
                 <p class="vol">Vol. Down<img id="down" src="img/bajar.png" width="20px"></p>
                 <h1 id="name">Write your name!!!</h1>
                 
-                    <input id="textname" type="text" width="20px"/>
+                    <input id="textname" type="text" width="20px" maxlength="9"/>
                     <button id="botonlogin">Let's Play</button>
             </div> 
         </div>   
@@ -75,15 +75,15 @@
                 <tr>
                     <td class="actionText"><h3><p class=para4></p></h3></td>
                 </tr>
-                <tr>
-                    <td class="actionImg" ><img class="imgGen" width="200 px" ></td>
+                <tr class=>
+                    <td class="actionImg" ><img class="imgGen" width="150 px" ></td>
                 </tr>
                 
             </table>
 
-            <table  width="318px">
+            <table id=winAnounce width="317px" >
                 <tr>
-                    <td class="winAnounce"><h2><p class=para5></h2></p></td>
+                    <td class="winAnounce"  ><h2 class="winAnounceh2"><p class="para5"></h2></p></td>
                 </tr>
             </table>
 
@@ -127,7 +127,7 @@
         
             <div id="byebox">
                 <img id="imgbye" src="img/bye2.gif"/>
-                <buton id="boton5">Play Again!!!</buton>
+                <buton id="boton5">Play Again !!!</buton>
             </div>
         </div>
 
@@ -140,8 +140,7 @@
             <audio id="winsound" src="audio/04_Stage_Clear.mp3"  loop></audio>
             <audio id="losesound" src="audio/10_Game_Over.mp3" loop></audio>
             <audio id="byesound" src="audio/07_World_Clear.mp3" loop></audio>
-        
-
+    
         </div>
 
     </body>

@@ -322,10 +322,6 @@ down2.addEventListener("click", function(){
     document.getElementById('byesound').volume-=0.1;
 });
 
-
-
-
-
 let botoncomienzo= document.querySelector("#comienzo");
 let divportada= document.querySelector("#portada");
 

@@ -80,19 +80,19 @@ function gameRound (humano){
         if (playerSelection==="scissors" || computerSelection==="rock"){
             imgGen.src="img/dscissors.gif";
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
-            para5.textContent=">>>Virtual Player Win<<<";
+            para5.textContent=">Virtual Player Win<";
             
         }   
         if (playerSelection==="rock"||computerSelection==="paper"){
             imgGen.src="img/drock.gif";
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
-            para5.textContent=">>>Virtual Player Win<<<";
+            para5.textContent=">Virtual Player Win<";
             
         }
         if (playerSelection==="paper"|| computerSelection==="scissors"){
             imgGen.src="img/dpaper.gif";
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
-            para5.textContent=">>>Virtual Player Win<<<";
+            para5.textContent=">Virtual Player Win<";
             
         }
          
@@ -106,19 +106,19 @@ function gameRound (humano){
         if (playerSelection==="scissors" || computerSelection==="paper"){
             imgGen.src="img/dpaper.gif";
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
-            para5.textContent=">>>"+playerName +" Win<<<";
+            para5.textContent=">"+playerName +" Win<";
                 
 
         }
         if (playerSelection==="rock" || computerSelection==="scissors"){
             imgGen.src="img/dscissors.gif";
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
-            para5.textContent=">>>"+playerName +" Win<<<";
+            para5.textContent=">"+playerName +" Win<";
         }
         if (playerSelection==="paper" || computerSelection==="rock"){
             imgGen.src="img/drock.gif";
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
-            para5.textContent=">>>"+playerName +" Win<<<";
+            para5.textContent=">"+playerName +" Win<";
         }
     }
     else{

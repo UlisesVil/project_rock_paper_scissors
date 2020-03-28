@@ -36,14 +36,7 @@ body{
 
 
 .para8, .para9{
-    font-size: 30px;
-}
-
-.para5{
-    font-size: 20px;
-}
-.voltext{
-    font-size: 10px;
+    font-size: 40px;
 }
 
 #portada{
@@ -79,9 +72,6 @@ h1, h3{
     width: 340px;
     margin-top: 0%;
     margin-bottom: 0%;
-}
-.actionText{
-    font-size: 15px;
 }
 
 .winAnounce{
@@ -140,7 +130,7 @@ table{
 
 #general{
     width: 320px;
-    height: 640px;
+    height: 618px;
     background-color: white;
     border-radius: 20px;
 }
@@ -279,5 +269,3 @@ input{
     padding-top: 80px;
     padding-left: 30px;
 }
-
-action

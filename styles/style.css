@@ -1,5 +1,4 @@
 html{
-    
     text-align: center;
     margin: 0px;
 }
@@ -8,165 +7,7 @@ body{
     display: inline-block;
     flex: 1;
     align-items: center;
-    background-color: darkcyan;
-}
-
-.para1, .para2, .para3, 
-.para5, .para8, .para9, 
-.para10, .actionText, 
-.actionImg, .score{
-    margin-top: 0%;
-    margin-bottom: 0%;
-    text-align: center;
-}
-.para1, .para2, .para3, .score{
-    color: rgba(0, 0, 0, 0.61); 
-    font-size: large;   
-}
-
-.para1, .para2, .para3,
-.para8, .para9{
-    padding: 0px;
-    border: 1px solid black;
-}
-
-.para4, .para5, .para8, .para9{
-    color: black;
-}
-
-
-.para8, .para9{
-    font-size: 40px;
-}
-
-#portada{
-   background: url(../img/portada.png);
-   width: 310px;
-   height: 470px;
-   text-align: center;
-   background-size: contain;
-   background-repeat: no-repeat;
-   padding-top: 50px;
-   border-radius: 20px;
-}
-
-#comienzo{
-    margin-top: 500px;
-    border:0px;
-    padding: 10px;
-    margin-left: 0px;
-    background-color: purple;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
-
-h1, h3{
-    color: rgba(0, 0, 0, 0.61);  
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
-.winAnounce, .main,.actionImg, .actionText{
-    width: 340px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
-.winAnounce{
-    margin-top: 0%;
-    margin-bottom: 0%;
-    text-align: center;
-    padding: 0px;
-}
-.winAnounceh2{
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-   
-}
-
-th, td {
-    width: 100px;
-       
-}
-
-table{
-    position: static;
-}
-
-.score{
-    font-size: 28px;
-    color: black;
-}
-
-.vs{
-    font-size: 28px;
-    color: black;
-    text-align: center;
-}
-
-#characterrock{
-    border: 5px solid red;
-    border-radius: 15px;
-    padding-top: 3px;
-}
-#characterpaper{
-    border: 5px solid rgb(60, 255, 0);
-    border-radius: 15px;
-    padding-top: 3px;
-}
-
-#characterscissors{
-    border: 5px solid rgb(6, 192, 238);
-    border-radius: 15px;
-    padding-top: 3px;
-}
-
-.imgstyle{
-    cursor: pointer;
-}
-
-#general{
-    width: 320px;
-    height: 635px;
-    background-color: white;
-    border-radius: 20px;
-
-}
-
-#boton1, 
-#boton2,
-#boton3, 
-#boton4{
-    border:0px;
-    padding: 10px;
-    margin-left: auto;
-    background-color: purple;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#start{
-    width: 320px;
-    height: 600px;
-    background: url(../img/instructions2.gif);
-    color: white;
-    border-radius: 20px;
-}
-
-ul{
-
-    list-style: none;
-    padding: 0px;
-}
- 
-h2{
-    color: white;
-    padding-top: 50px;
-    text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 
 #instructions{
@@ -221,9 +62,40 @@ h2{
    border-radius: 20px;
 }
 
-.vol{
+#volLogin{
+    display: block;
+    width: 100px;
+    /*border: 1px solid red;*/
     text-align: left;
-}   
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+}
+
+.vol{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin: 0px 0px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+}
+.volp{
+    width: 100px;
+    left: -10px;
+    margin: 0px 0px;
+    /*border: 1px solid rgb(0, 255, 85);*/
+}
+
+#imgdiv{
+    display: block;
+    float: right;
+    width: 21px;
+    /*border: 1px solid rgb(0, 26, 255);*/
+}
 
 input{
     text-align: center;
@@ -231,6 +103,163 @@ input{
     padding-top: 5px;
     padding-bottom: 5px;
     
+}
+
+.para1, .para2, .para3, 
+.para5, .para8, .para9, 
+.para10, .actionText, 
+.actionImg, .score{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.para1, .para2, .para3, .score{
+    color: rgba(0, 0, 0, 0.61); 
+    font-size: large;   
+}
+
+.para1, .para2, .para3,
+.para8, .para9{
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.para4, .para5, .para8, .para9{
+    color: black;
+}
+
+.para8, .para9{
+    font-size: 40px;
+}
+
+#portada{
+   background: url(../img/portada.png);
+   width: 310px;
+   height: 470px;
+   text-align: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-top: 50px;
+   border-radius: 20px;
+}
+
+#comienzo{
+    margin-top: 500px;
+    margin-left: 0px;
+    border:0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+h1, h3{
+    color: rgba(0, 0, 0, 0.61);  
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.winAnounce, .main,.actionImg, .actionText{
+    width: 340px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.winAnounce{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding: 0px;
+}
+
+.winAnounceh2{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+
+th, td {
+    width: 100px;
+       
+}
+
+table{
+    position: static;
+}
+
+.score{
+    font-size: 28px;
+    color: black;
+}
+
+.vs{
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+#characterrock{
+    border: 5px solid red;
+    border-radius: 15px;
+    padding-top: 3px;
+}
+
+#characterpaper{
+    border: 5px solid rgb(60, 255, 0);
+    border-radius: 15px;
+    padding-top: 3px;
+}
+
+#characterscissors{
+    border: 5px solid rgb(6, 192, 238);
+    border-radius: 15px;
+    padding-top: 3px;
+}
+
+.imgstyle{
+    cursor: pointer;
+}
+
+#general{
+    width: 320px;
+    height: 635px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#boton1, 
+#boton2,
+#boton3, 
+#boton4{
+    border:0px;
+    padding: 10px;
+    margin-left: auto;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start{
+    width: 320px;
+    height: 600px;
+    background: url(../img/instructions2.gif);
+    color: white;
+    border-radius: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+ 
+h2{
+    color: white;
+    padding-top: 50px;
+    text-align: center;
 }
 
 #win{
@@ -269,4 +298,15 @@ input{
 #imgbye{
     padding-top: 80px;
     padding-left: 30px;
+    cursor: pointer;
+}
+
+#up2:hover, #down2:hover,
+#up1:hover, #down:hover{
+    width: 22px;
+}
+
+#up2:active, #down2:active,
+#up1:active, #down:active{
+    width: 15px;
 }

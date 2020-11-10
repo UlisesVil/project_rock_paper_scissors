@@ -1,8 +1,5 @@
 "use strict"
 
-
-    
-
 //Virtual player selection
 //Score variables
 
@@ -261,7 +258,11 @@ divgeneralLogin= document.querySelector("#generalLogin");
 botonlogin.addEventListener("click", function(){
     divgeneralLogin.style.display="none";
     generalDiv.style.display="";
-    playerName=document.querySelector("#textname").value;
+    if(document.querySelector("#textname").value != ""){
+        playerName=document.querySelector("#textname").value;
+    }else{
+        playerName="Player 1";
+    }
     document.getElementById('gamestart').play();
     document.getElementById('playername').pause()
 });

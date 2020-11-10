@@ -9,10 +9,7 @@
     </head>
     <body>
         
-       
-
         <div id="start">
-            
             <div id="startbox" >
                 
                 <h2>Instructions</h2>
@@ -26,27 +23,38 @@
                 </ul>
 
                 <button id="botonstart">Start!!!</button>
-            
-                
             </div>    
         </div>
 
 
         <div id="generalLogin" style="display: none;">
             <div id="login" >
-                <p class="vol">Vol. Up <img id="up1" src="img/subir.png" width="20px"></p>
-                
-                <p class="vol">Vol. Down<img id="down" src="img/bajar.png" width="20px"></p>
+
+                <div id="volLogin">
+                    <div class="vol">
+                        <p class="volp">Vol. Up</p>
+                        <div id="imgdiv">
+                            <img id="up1" src="img/subir.png" width="20px">
+                        </div>
+                    </div>
+                    
+                    <div class="vol">
+                        <p class="volp">Vol. Down</p>
+                        <div id="imgdiv">
+                            <img id="down" src="img/bajar.png" width="20px">
+                        </div>
+                    </div>
+                </div>
+
                 <h1 id="name">Write your name!!!</h1>
                 
-                    <input id="textname" type="text" width="20px" maxlength="9"/>
-                    <button id="botonlogin">Let's Play</button>
+                <input id="textname" type="text" width="20px" maxlength="9"/>
+                <button id="botonlogin">Let's Play</button>
             </div> 
         </div>   
 
 
         <div  id="general" style="display: none;">   
-            
             <table >
                 <tr>
                     <td>Vol. Up <img id="up2" src="img/subir.png" width="20px"></td>
@@ -77,7 +85,6 @@
                 <tr class=>
                     <td class="actionImg" ><img class="imgGen" width="150 px" ></td>
                 </tr>
-                
             </table>
 
             <table id=winAnounce width="317px" >
@@ -97,11 +104,9 @@
             <table>
                 <tr>
                     <!--<td class="main"><img src="img/select.png" width="300px"></td>-->
-                    
                 </tr>
             </table>
         </div> 
-
 
         <div id="win" style="display: none;" >
             <div id="winbox" >
@@ -112,7 +117,6 @@
             </div>
         </div>
 
-
         <div id="lose"  style="display: none;">
             <div id="losebox" >
                 <img id="imgyoulose" src="img/youlose.gif" width="320px" height="300px"/>
@@ -121,9 +125,7 @@
             </div>
         </div>
 
-
         <div id="bye" style="display: none;">
-        
             <div id="byebox">
                 <img id="imgbye" src="img/bye2.gif"/>
                 <buton id="boton5">Play Again !!!</buton>
@@ -133,13 +135,11 @@
         <script type="text/javascript" src="JS/script.js"></script>
 
         <div>
-            
             <audio id="playername" src="audio/01_Password.mp3" loop></audio>
             <audio id="gamestart" src="audio/03_Stage_Theme.mp3" loop></audio>
             <audio id="winsound" src="audio/04_Stage_Clear.mp3"  loop></audio>
             <audio id="losesound" src="audio/10_Game_Over.mp3" loop></audio>
             <audio id="byesound" src="audio/07_World_Clear.mp3" loop></audio>
-    
         </div>
 
     </body>

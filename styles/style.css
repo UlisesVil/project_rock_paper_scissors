@@ -4,24 +4,30 @@ html{
 }
 
 body{
-    display: inline-block;
-    flex: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background: url(../img/back6.png);
+    margin: 0;
+    padding: 0;
 }
 
 #instructions{
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 50px;
 }
 
 #botonstart{
-    border:0px;
     padding: 10px;
     margin: auto;
     background-color: purple;
     color: white;
     border-radius: 5px;
+    border:0px;
     cursor: pointer;
 }
 
@@ -33,6 +39,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
 #boton5{
     margin-left: auto;
 }
@@ -65,7 +72,6 @@ body{
 #volLogin{
     display: block;
     width: 100px;
-    /*border: 1px solid red;*/
     text-align: left;
     align-items: center;
     justify-content: center;
@@ -81,20 +87,18 @@ body{
     text-align: left;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid red;*/
 }
+
 .volp{
     width: 100px;
     left: -10px;
     margin: 0px 0px;
-    /*border: 1px solid rgb(0, 255, 85);*/
 }
 
 #imgdiv{
     display: block;
     float: right;
     width: 21px;
-    /*border: 1px solid rgb(0, 26, 255);*/
 }
 
 input{
@@ -102,7 +106,6 @@ input{
     border-radius: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    
 }
 
 .para1, .para2, .para3, 
@@ -134,21 +137,21 @@ input{
 }
 
 #portada{
-   background: url(../img/portada.png);
    width: 310px;
    height: 470px;
    text-align: center;
-   background-size: contain;
-   background-repeat: no-repeat;
    padding-top: 50px;
    border-radius: 20px;
+   background: url(../img/portada.png);
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 #comienzo{
     margin-top: 500px;
     margin-left: 0px;
-    border:0px;
     padding: 10px;
+    border:0px;
     border-radius: 5px;
     background-color: purple;
     color: white;
@@ -178,12 +181,10 @@ h1, h3{
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-   
 }
 
 th, td {
     width: 100px;
-       
 }
 
 table{
@@ -234,11 +235,11 @@ table{
 #boton2,
 #boton3, 
 #boton4{
-    border:0px;
     padding: 10px;
     margin-left: auto;
     background-color: purple;
     color: white;
+    border:0px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -309,4 +310,24 @@ h2{
 #up2:active, #down2:active,
 #up1:active, #down:active{
     width: 15px;
+}
+
+@media screen and (max-width: 320px) {
+    body{
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+   
+    #start{
+        margin-top: -50px !important;
+    }
+    #login{
+        width: 300px;
+        margin-top: -50px !important;
+    }
+    #general{
+        margin-top: -35px;
+    }
 }

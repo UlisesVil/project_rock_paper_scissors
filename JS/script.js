@@ -2,7 +2,6 @@
 
 //Virtual player selection
 //Score variables
-
 let playerName;
 let pS=0;
 let cS=0;
@@ -20,7 +19,6 @@ const imgGen = document.querySelector('.imgGen');
 const imgGen2 = document.querySelector('.imgGen2');
 const imgGen3 = document.querySelector('.imgGen3');
 let playerSelection;
-textname
 
 //One round Function and Winner decision per round
 function gameRound (humano){
@@ -28,23 +26,18 @@ function gameRound (humano){
     function randomNum (){
         return (Math.floor(Math.random()*3));
     }
-       
+
     let computerSelection;
-    
     function computerPlay (){
         let elements= ["rock","scissors","paper"];
         let random = randomNum ()
         computerSelection= elements[random];
-        console.log(computerSelection);
         return(computerSelection);
     }
 
     computerSelection = computerPlay ()
-    
     let nombre = ["rock", "paper", "scissors"];
-    let playerSelection= nombre[humano]
-    console.log(playerSelection);
-
+    let playerSelection= nombre[humano];
 
     if ((playerSelection==="rock" && computerSelection==="rock") || 
         (playerSelection==="paper" && computerSelection==="paper") || 
@@ -67,8 +60,7 @@ function gameRound (humano){
             para4.textContent=playerSelection.toUpperCase() + "  --VS--  " +computerSelection.toUpperCase();
             para5.textContent=">>>Tied Game<<<";
         }
-    }
-    else if ((playerSelection==="scissors" && computerSelection==="rock") || 
+    }else if ((playerSelection==="scissors" && computerSelection==="rock") || 
         (playerSelection==="rock" && computerSelection==="paper") || 
         (playerSelection==="paper" && computerSelection==="scissors")){
         globalScore = globalScore+1;
@@ -93,8 +85,7 @@ function gameRound (humano){
             
         }
          
-    }
-    else if ((playerSelection==="scissors" && computerSelection==="paper") || 
+    }else if ((playerSelection==="scissors" && computerSelection==="paper") || 
         (playerSelection==="rock" && computerSelection==="scissors") || 
         (playerSelection==="paper" && computerSelection==="rock")){
         globalScore = globalScore+1;
@@ -117,11 +108,9 @@ function gameRound (humano){
             para4.textContent= playerSelection.toUpperCase() + "  --VS--  " + computerSelection.toUpperCase() ;
             para5.textContent=">"+playerName +" Win<";
         }
-    }
-    else{
+    }else{
         globalScore = globalScore+1;
         para1.textContent="Try again"
-        
     }
     
     para1.textContent= playerName ;
@@ -131,9 +120,7 @@ function gameRound (humano){
     para9.textContent= cS ;
     para10.textContent= tG ;
     
-
     if(pS==5||cS==5){
-
         let generalDiv= document.querySelector("#general");
         let divwin= document.querySelector("#win");
         let divlose= document.querySelector("#lose");
@@ -155,28 +142,25 @@ function gameRound (humano){
         }
     }
     
-
     if(playerSelection==="scissors"){
-    imgGen2.src="img/scissors.gif";
+        imgGen2.src="img/scissors.gif";
     }
     if(playerSelection==="rock"){
-    imgGen2.src="img/rock.gif";
+        imgGen2.src="img/rock.gif";
     }
     if(playerSelection==="paper"){
-    imgGen2.src="img/paper.gif";
+        imgGen2.src="img/paper.gif";
     }
 
     if(computerSelection==="scissors"){
-    imgGen3.src="img/scissors.gif";
+        imgGen3.src="img/scissors.gif";
     }
     if(computerSelection==="rock"){
-    imgGen3.src="img/rock.gif";
+        imgGen3.src="img/rock.gif";
     }
     if(computerSelection==="paper"){
-    imgGen3.src="img/paper.gif";
+        imgGen3.src="img/paper.gif";
     }
-
-
 
     let boton1= document.querySelector("#boton1");
     let boton2= document.querySelector("#boton2");
@@ -204,7 +188,6 @@ function gameRound (humano){
         document.getElementById('byesound').play();
         document.getElementById('winsound').pause();
     });
-
 
     let boton3= document.querySelector("#boton3");
     let boton4= document.querySelector("#boton4");
@@ -236,9 +219,7 @@ function gameRound (humano){
         location.reload();
         return false;
     });
-
 }
-   
    
 let divgeneralLogin;
 let botonStart= document.querySelector("#botonstart");
@@ -267,19 +248,15 @@ botonlogin.addEventListener("click", function(){
     document.getElementById('playername').pause()
 });
 
-
 let imgbye = document.getElementById("imgbye");
 let src = imgbye.getAttribute("src");
-    console.log(src);
 
 imgbye.addEventListener("click", function(){
     imgbye.setAttribute("src",src);
 });
 
-
 let up1 = document.querySelector("#up1");
 up1.addEventListener("click", function(){
-    console.log("has dado click");
     document.getElementById('playername').volume+=0.1;
     document.getElementById('gamestart').volume+=0.1;
     document.getElementById('winsound').volume+=0.1;
@@ -287,10 +264,8 @@ up1.addEventListener("click", function(){
     document.getElementById('byesound').volume+=0.1;
 });
 
-
 let down = document.querySelector("#down");
 down.addEventListener("click", function(){
-    console.log("has dado click");
     document.getElementById('playername').volume-=0.1;
     document.getElementById('gamestart').volume-=0.1;
     document.getElementById('winsound').volume-=0.1;
@@ -298,12 +273,8 @@ down.addEventListener("click", function(){
     document.getElementById('byesound').volume-=0.1;
 });
 
-
 let up2 = document.querySelector("#up2");
-console.log(up2);
-
 up2.addEventListener("click", function(){
-    console.log("has dado click");
     document.getElementById('playername').volume+=0.1;
     document.getElementById('gamestart').volume+=0.1;
     document.getElementById('winsound').volume+=0.1;
@@ -311,11 +282,8 @@ up2.addEventListener("click", function(){
     document.getElementById('byesound').volume+=0.1;
 });
 
-
 let down2 = document.querySelector("#down2");
-
 down2.addEventListener("click", function(){
-    console.log("has dado click");
     document.getElementById('playername').volume-=0.1;
     document.getElementById('gamestart').volume-=0.1;
     document.getElementById('winsound').volume-=0.1;

@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Rock Paper Scissors Game (JavaScript).
 
-You can use the [editor on GitHub](https://github.com/UlisesVil/project_rock_paper_scissors/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This application is fully responsive and is available on the web, built with JavaScript HTML and CSS3.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The classic rock-paper-scissors game allows the user to enter their name before starting the game and placed it on the scoreboard.
 
-### Markdown
+The game has retro-style background music that will change depending on which section of the application is active, and the user can increase or decrease its volume.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To start the game, the user must select one of the three animated characters on the screen. Selecting one of them will start the game and face a virtual player.
 
-```markdown
-Syntax highlighted code block
+The central animation will show who beats whom and will take a count of games won or lost by each player and a count of the tied games.
 
-# Header 1
-## Header 2
-### Header 3
+The player will win when his score reaches five games won before the other competitor.
 
-- Bulleted
-- List
+As soon as the winner is determined, the winner or game over screen appears depending on the obtained result.
 
-1. Numbered
-2. List
+On the winning player and game over screen, the user will have the option of playing again or quit the game.
 
-**Bold** and _Italic_ and `Code` text
+If the user chooses the option to leave the game, the goodbye screen displays.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/UlisesVil/project_rock_paper_scissors/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Visit the game here: https://ulisesvil.github.io/project_rock_paper_scissors
